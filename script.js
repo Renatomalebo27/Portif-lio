@@ -1,36 +1,48 @@
-// Ajusta o ano no rodapé e adiciona handlers simples
-document.addEventListener('DOMContentLoaded',()=>{
-  const y=document.getElementById('year');
-  if(y) y.textContent=new Date().getFullYear();
-
-  // smooth scroll para anchors
-  document.querySelectorAll('a[href^="#"]').forEach(a=>{
-    a.addEventListener('click',e=>{
-      const href=a.getAttribute('href');
-      if(href.length>1){
+// Scroll suave para links âncora
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
         e.preventDefault();
-        const el=document.querySelector(href);
-        if(el) el.scrollIntoView({behavior:'smooth',block:'start'});
-      }
+        
+        const targetId = this.getAttribute('href');
+        if(targetId === '#') return;
+        
+        const targetElement = document.querySelector(targetId);
+        if(targetElement) {
+            // Se for a home, rola para o topo
+            if(targetId === '#home') {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            } else {
+                window.scrollTo({
+                    top: targetElement.offsetTop - 80,
+                    behavior: 'smooth'
+                });
+            }
+        }
     });
-  });
-
-  // validação simples do formulário
-  const form=document.getElementById('contactForm');
-  if(form){
-    form.addEventListener('submit',e=>{
-      e.preventDefault();
-      const name=form.elements['name'].value.trim();
-      const email=form.elements['email'].value.trim();
-      const message=form.elements['message'].value.trim();
-      if(!name||!email||!message){
-        alert('Por favor, preencha todos os campos.');
-        return;
-      }
-      // ação simples: abrir email
-      const subject=encodeURIComponent('Contato via portfólio — '+name);
-      const body=encodeURIComponent(message+'\n\n'+'Email: '+email);
-      window.location.href=`mailto:seu@email.com?subject=${subject}&body=${body}`;
-    });
-  }
 });
+
+// Scroll da seta para baixo
+document.querySelector('.scroll-down').addEventListener('click', () => {
+    window.scrollTo({
+        top: window.innerHeight,
+        behavior: 'smooth'
+    });
+});
+
+// Mudar header ao rolar
+window.addEventListener('scroll', () => {
+    const header = document.getElementById('header');
+    if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+    } else {
+        header.classList.remove('scrolled');
+    }
+});
+
+// Inicializar header com classe scrolled se já estiver rolado
+if (window.scrollY > 50) {
+    document.getElementById('header').classList.add('scrolled');
+}

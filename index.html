@@ -1,115 +1,151 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<title>Portfólio — Seu Nome</title>
-		<link rel="stylesheet" href="styles.css" />
-	</head>
-	<body>
-		<header class="site-header">
-			<div class="container header-inner">
-				<h1 class="logo">Seu Nome</h1>
-				<nav>
-					<ul class="nav-list">
-						<li><a href="#about">Sobre</a></li>
-						<li><a href="#projects">Projetos</a></li>
-						<li><a href="#contact">Contato</a></li>
-					</ul>
-				</nav>
-			</div>
-		</header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renato Malebo | Desenvolvedor</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="#" class="logo">Renato Malebo</a>
+                
+                <nav>
+                    <ul>
+                        <li><a href="#about">Sobre</a></li>
+                        <li><a href="#skills">Habilidades</a></li>
+                        <li><a href="#projects">Projetos</a></li>
+                        <li><a href="#contact">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
 
-		<main>
-			<section class="hero">
-				<div class="container">
-					<h2>Olá, eu sou <span class="accent">Seu Nome</span></h2>
-					<p class="lead">Desenvolvedor web — crio sites e aplicações com foco em experiência do usuário.</p>
-					<p><a class="btn" href="#projects">Ver Projetos</a></p>
-				</div>
-			</section>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Olá, eu sou Renato Malebo</h1>
+            <p>Estudante e entusiasta de Tecnologia da Informação, com foco em desenvolvimento de software, aplicações web e mobile.</p>
+        </div>
+        <div class="scroll-down">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
 
-			<section id="about" class="about container">
-				<h3>Sobre mim</h3>
-				<p>Sou um desenvolvedor com experiência em HTML, CSS e JavaScript. Gosto de transformar ideias em interfaces funcionais e bonitas.</p>
-			</section>
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title">Sobre Mim</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Sou Renato Malebo, estudante e entusiasta da área de Tecnologia da Informação, com foco em desenvolvimento de software, aplicações web e mobile. Tenho interesse em criar soluções práticas, funcionais e bem estruturadas, sempre aplicando boas práticas de programação e organização de sistemas.</p>
+                    
+                    <p>Possuo uma base sólida em lógica de programação, programação orientada a objetos e desenvolvimento web, aliando teoria e prática para resolver problemas reais. Estou em constante aprendizado, buscando evoluir tecnicamente e profissionalmente na área de tecnologia.</p>
+                    
+                    <p>Minha abordagem combina aprendizado teórico com prática em projetos reais, sempre buscando construir soluções que sejam eficientes, bem estruturadas e de fácil manutenção.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-			<section id="skills" class="skills container">
-				<h3>Habilidades</h3>
-				<div class="skills-grid">
-					<div class="skill-card">
-						<div class="skill-icon">
-							<!-- Java (coffee) -->
-							<svg viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path fill="#5382A1" d="M32 96c0 17.7 21.5 32 48 32s48-14.3 48-32H32z"/><path fill="#E24C4B" d="M96 80c0 17.7-21.5 32-48 32S0 97.7 0 80c0-11 8.1-20 20-24 0 0-4.5-8 12-16 0 0 4-2 16-2s16 2 16 2c16 8 12 16 12 16 11.9 4 20 13 20 24z"/></svg>
-						</div>
-						<div class="skill-name">Java</div>
-					</div>
-					<div class="skill-card">
-						<div class="skill-icon">
-							<!-- JavaScript -->
-							<svg viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="128" height="128" fill="#F7DF1E" rx="16"/><text x="50%" y="60%" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="64" text-anchor="middle" fill="#000">JS</text></svg>
-						</div>
-						<div class="skill-name">JavaScript</div>
-					</div>
-					<div class="skill-card">
-						<div class="skill-icon">
-							<!-- HTML5 -->
-							<svg viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path fill="#E44D26" d="M19 4l9 101 41 12 41-12 9-101H19z"/><path fill="#F16529" d="M64 116v-27h21l3-34H64V42h43l-4 45-39 10v19z"/></svg>
-						</div>
-						<div class="skill-name">HTML5</div>
-					</div>
-					<div class="skill-card">
-						<div class="skill-icon">
-							<!-- CSS3 -->
-							<svg viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path fill="#1572B6" d="M19 4l9 101 41 12 41-12 9-101H19z"/><path fill="#33A0DC" d="M64 116v-27h21l3-34H64V42h43l-4 45-39 10v19z"/></svg>
-						</div>
-						<div class="skill-name">CSS3</div>
-					</div>
-				</div>
-			</section>
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <h2 class="section-title">Minhas Habilidades</h2>
+            <div class="skills-container">
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-java"></i>
+                    </div>
+                    <h3>Java</h3>
+                    <p>Programação orientada a objetos, criação de classes, métodos e estruturas lógicas. Conhecimento em coleções, exceções e conceitos de POO.</p>
+                </div>
+                
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-js"></i>
+                    </div>
+                    <h3>JavaScript</h3>
+                    <p>Desenvolvimento de funcionalidades dinâmicas para aplicações web. Manipulação do DOM, eventos, funções e estruturas de controle.</p>
+                </div>
+                
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <h3>HTML5</h3>
+                    <p>Estruturação semântica de páginas web. Utilização de tags semânticas, formulários, tabelas e elementos estruturais modernos.</p>
+                </div>
+                
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <h3>CSS3</h3>
+                    <p>Estilização, layout responsivo e design de interfaces. Flexbox, Grid, media queries, animações e boas práticas de design responsivo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-			<section id="projects" class="projects container">
-				<h3>Projetos</h3>
-				<div class="grid">
-					<article class="card">
-						<h4>Projeto 1</h4>
-						<p>Descrição curta do projeto 1. Tecnologias: HTML, CSS, JS.</p>
-						<p><a href="#" class="link">Ver projeto</a></p>
-					</article>
-					<article class="card">
-						<h4>Projeto 2</h4>
-						<p>Descrição curta do projeto 2. Tecnologias: React, CSS.</p>
-						<p><a href="#" class="link">Ver projeto</a></p>
-					</article>
-					<article class="card">
-						<h4>Projeto 3</h4>
-						<p>Descrição curta do projeto 3. Tecnologias: Node.js, API.</p>
-						<p><a href="#" class="link">Ver projeto</a></p>
-					</article>
-				</div>
-			</section>
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2 class="section-title">Meus Projetos</h2>
+            <div class="projects-container">
+                <div class="project-card">
+                    <h3>Sistema de Gerenciamento em Java</h3>
+                    <p>Aplicação console desenvolvida em Java para gerenciamento de dados, utilizando conceitos de POO, coleções e estrutura de dados. O sistema permite cadastrar, listar, atualizar e remover informações de forma organizada.</p>
+                    <a href="#" class="project-link">Ver Projeto <i class="fas fa-external-link-alt"></i></a>
+                </div>
+                
+                <div class="project-card">
+                    <h3>Portfólio Web Responsivo</h3>
+                    <p>Site pessoal desenvolvido com HTML5, CSS3 e JavaScript, com design responsivo que se adapta a diferentes tamanhos de tela. Implementação de navegação suave, layout flexível e otimização para performance.</p>
+                    <a href="#" class="project-link">Ver Projeto <i class="fas fa-external-link-alt"></i></a>
+                </div>
+                
+                <div class="project-card">
+                    <h3>Aplicação Web Interativa</h3>
+                    <p>Projeto front-end com funcionalidades dinâmicas implementadas em JavaScript, incluindo validação de formulários, manipulação do DOM e interatividade. Foco em UX/UI e boas práticas de desenvolvimento web.</p>
+                    <a href="#" class="project-link">Ver Projeto <i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-			<section id="contact" class="contact container">
-				<h3>Contato</h3>
-				<p>Quer trabalhar comigo? Envie uma mensagem:</p>
-				<form id="contactForm">
-					<label for="name">Nome</label>
-					<input id="name" name="name" required />
-					<label for="email">Email</label>
-					<input id="email" name="email" type="email" required />
-					<label for="message">Mensagem</label>
-					<textarea id="message" name="message" rows="4" required></textarea>
-					<button type="submit" class="btn">Enviar</button>
-				</form>
-			</section>
-		</main>
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">Renato Malebo</div>
+                
+                <div class="footer-links">
+                    <a href="#about">Sobre</a>
+                    <a href="#skills">Habilidades</a>
+                    <a href="#projects">Projetos</a>
+                    <a href="#contact">Contato</a>
+                </div>
+                
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fas fa-envelope"></i></a>
+                </div>
+                
+                <div class="copyright">
+                    &copy; 2023 Renato Malebo. Todos os direitos reservados.
+                </div>
+            </div>
+        </div>
+    </footer>
 
-		<footer class="site-footer">
-			<div class="container">
-				<p>© <span id="year"></span> Seu Nome — Portfólio</p>
-			</div>
-		</footer>
-
-		<script src="script.js"></script>
-	</body>
+    <script src="script.js"></script>
+</body>
 </html>
