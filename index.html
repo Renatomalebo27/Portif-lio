@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Portfólio — Seu Nome</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<header class="site-header">
+			<div class="container header-inner">
+				<h1 class="logo">Seu Nome</h1>
+				<nav>
+					<ul class="nav-list">
+						<li><a href="#about">Sobre</a></li>
+						<li><a href="#projects">Projetos</a></li>
+						<li><a href="#contact">Contato</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<main>
+			<section class="hero">
+				<div class="container">
+					<h2>Olá, eu sou <span class="accent">Seu Nome</span></h2>
+					<p class="lead">Desenvolvedor web — crio sites e aplicações com foco em experiência do usuário.</p>
+					<p><a class="btn" href="#projects">Ver Projetos</a></p>
+				</div>
+			</section>
+
+			<section id="about" class="about container">
+				<h3>Sobre mim</h3>
+				<p>Sou um desenvolvedor com experiência em HTML, CSS e JavaScript. Gosto de transformar ideias em interfaces funcionais e bonitas.</p>
+			</section>
+
+			<section id="skills" class="skills container">
+				<h3>Habilidades</h3>
+				<div class="skills-grid">
+					<div class="skill-card">
+						<div class="skill-icon">
+							<!-- Java (coffee) -->
+							<svg viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path fill="#5382A1" d="M32 96c0 17.7 21.5 32 48 32s48-14.3 48-32H32z"/><path fill="#E24C4B" d="M96 80c0 17.7-21.5 32-48 32S0 97.7 0 80c0-11 8.1-20 20-24 0 0-4.5-8 12-16 0 0 4-2 16-2s16 2 16 2c16 8 12 16 12 16 11.9 4 20 13 20 24z"/></svg>
+						</div>
+						<div class="skill-name">Java</div>
+					</div>
+					<div class="skill-card">
+						<div class="skill-icon">
+							<!-- JavaScript -->
+							<svg viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="128" height="128" fill="#F7DF1E" rx="16"/><text x="50%" y="60%" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="64" text-anchor="middle" fill="#000">JS</text></svg>
+						</div>
+						<div class="skill-name">JavaScript</div>
+					</div>
+					<div class="skill-card">
+						<div class="skill-icon">
+							<!-- HTML5 -->
+							<svg viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path fill="#E44D26" d="M19 4l9 101 41 12 41-12 9-101H19z"/><path fill="#F16529" d="M64 116v-27h21l3-34H64V42h43l-4 45-39 10v19z"/></svg>
+						</div>
+						<div class="skill-name">HTML5</div>
+					</div>
+					<div class="skill-card">
+						<div class="skill-icon">
+							<!-- CSS3 -->
+							<svg viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path fill="#1572B6" d="M19 4l9 101 41 12 41-12 9-101H19z"/><path fill="#33A0DC" d="M64 116v-27h21l3-34H64V42h43l-4 45-39 10v19z"/></svg>
+						</div>
+						<div class="skill-name">CSS3</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="projects" class="projects container">
+				<h3>Projetos</h3>
+				<div class="grid">
+					<article class="card">
+						<h4>Projeto 1</h4>
+						<p>Descrição curta do projeto 1. Tecnologias: HTML, CSS, JS.</p>
+						<p><a href="#" class="link">Ver projeto</a></p>
+					</article>
+					<article class="card">
+						<h4>Projeto 2</h4>
+						<p>Descrição curta do projeto 2. Tecnologias: React, CSS.</p>
+						<p><a href="#" class="link">Ver projeto</a></p>
+					</article>
+					<article class="card">
+						<h4>Projeto 3</h4>
+						<p>Descrição curta do projeto 3. Tecnologias: Node.js, API.</p>
+						<p><a href="#" class="link">Ver projeto</a></p>
+					</article>
+				</div>
+			</section>
+
+			<section id="contact" class="contact container">
+				<h3>Contato</h3>
+				<p>Quer trabalhar comigo? Envie uma mensagem:</p>
+				<form id="contactForm">
+					<label for="name">Nome</label>
+					<input id="name" name="name" required />
+					<label for="email">Email</label>
+					<input id="email" name="email" type="email" required />
+					<label for="message">Mensagem</label>
+					<textarea id="message" name="message" rows="4" required></textarea>
+					<button type="submit" class="btn">Enviar</button>
+				</form>
+			</section>
+		</main>
+
+		<footer class="site-footer">
+			<div class="container">
+				<p>© <span id="year"></span> Seu Nome — Portfólio</p>
+			</div>
+		</footer>
+
+		<script src="script.js"></script>
+	</body>
+</html>
